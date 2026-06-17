@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRM Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .customer-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        #customerList {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CRM Software</h1>
+
+    <h3>Add Customer</h3>
+
+    <input type="text" id="name" placeholder="Customer Name">
+
+    <input type="email" id="email" placeholder="Customer Email">
+
+    <select id="status">
+        <option value="">Select Status</option>
+        <option value="Lead">Lead</option>
+        <option value="Interested">Interested</option>
+        <option value="Customer">Customer</option>
+    </select>
+
+    <button onclick="addCustomer()">
+        Add Customer
+    </button>
+
+    <br><br>
+
+    <input type="text"
+           id="search"
+           placeholder="Search Customer">
+
+    <button onclick="searchCustomer()">
+        Search
+    </button>
+
+    <div id="customerList"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
